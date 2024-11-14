@@ -1,38 +1,126 @@
-.App {
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top green bar styling */
+.top-bar {
+  background-color: #2e7d32; /* Green color */
+  padding: 8px 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .social-links a {
+  color: white;
+  margin-right: 15px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-bar .social-links a:hover {
+  color: #ffeb3b; /* Yellowish color on hover */
+}
+
+.top-bar .btn {
+  background-color: #ffeb3b; /* Yellow button */
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+.top-bar .btn:hover {
+  background-color: #fdd835; /* Slightly darker yellow on hover */
+}
+
+/* Header background and padding */
+.header {
+  background-color: #4CAF50; /* Header background color */
+  padding: 10px 0;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar links with background color */
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  background-color: #28a745; /* Background color for links */
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: #218838; /* Darker shade on hover */
+  color: #f8f9fa; /* Light text color on hover */
+}
+
+/* Logo size */
+.logo-inline {
+  width: 50px; /* Adjust logo size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Header title styling */
+.header .navbar-brand h1 {
+  font-size: 1.5rem;
+}
+
+/* Hero section styling */
+.hero-section {
+  background-blend-mode: overlay;
+  color: white;
+  padding: 100px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Button group styling in hero section */
+.button-group {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Information cards section styling */
+.info-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Card styling */
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Card icon styling */
+.card i {
+  font-size: 24px;
+  color: #4CAF50; /* Icon color */
+}
+
+/* Card text styling */
+.card p {
+  margin-top: 10px;
+  font-size: 1.1rem;
 }
